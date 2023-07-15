@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Russo One, sans-serif;
+}
+
+body {
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  padding: 16px 0;
+  background-color: #2ecc71;
+  text-align: center;
+}
+
+.slider {
+  padding: 20px;
+  margin: 0 auto;
+  width: 1200px;
+  height: 600px;
+  overflow: hidden;
+}
+
+.slides {
+  width: 500%;
+  height: 400px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 25%;
+  position: relative;
+}
+
+.slide img {
+  height: calc(100vh - 10px);
+  width: 800px;
+}
+
+.manual-navigation {
+  position: absolute;
+  width: 1200px;
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid #FFF;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background-color: #fff;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -50%;
+}
+
+.form-container {
+  height: calc(50vh - 70px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+}
+.form-container h2 {
+  font-size: 2.5em;
+  text-align: center;
+}
+.form-container form {
+  width: 100%;
+  max-width: 200px;
+  margin-top: 20px;
+}
+.form-container form label {
+  font-weight: bold;
+  cursor: pointer;
+}
+.form-container form input {
+  padding: 2px;
+  display: block;
+  width: 100%;
+  margin-bottom: 16px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid #2ecc71;
+}
+.form-container form button {
+  padding: 2px;
+  display: block;
+  width: 100%;
+  margin-bottom: 16px;
+  background-color: #27ae60;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+.form-container form button:hover {
+  background-color: #36d278;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
